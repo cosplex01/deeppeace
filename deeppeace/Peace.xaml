@@ -6,14 +6,17 @@
         xmlns:local="clr-namespace:deeppeace"
         mc:Ignorable="d"
         Height="150" Width="180">
-    <Grid>
+    <UserControl.Resources>
+        <local:PeaceModelView x:Key="PeaceVMInstance"/>
+    </UserControl.Resources>
+    <Grid DataContext="{StaticResource PeaceVMInstance}">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="30*"/>
             <ColumnDefinition Width="199*"/>
             <ColumnDefinition Width="30*"/>
         </Grid.ColumnDefinitions>
         <Viewbox Grid.Column="1" Margin="31,15,31,50">
-            <Button Background="Transparent">
+            <Button Background="Transparent" BorderThickness="0" Foreground="Aquamarine" Command="{Binding MyCommand}">
                 <Image Source="/starseed.png" ScrollViewer.VerticalScrollBarVisibility="Disabled" Stretch="Fill" />
             </Button>
         </Viewbox>
