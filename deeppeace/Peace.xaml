@@ -1,0 +1,22 @@
+﻿<UserControl x:Class="deeppeace.Peace"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:deeppeace"
+        mc:Ignorable="d"
+        Height="150" Width="180">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="30*"/>
+            <ColumnDefinition Width="199*"/>
+            <ColumnDefinition Width="30*"/>
+        </Grid.ColumnDefinitions>
+        <Viewbox Grid.Column="1" Margin="31,15,31,50">
+            <Button Background="Transparent">
+                <Image Source="/starseed.png" ScrollViewer.VerticalScrollBarVisibility="Disabled" Stretch="Fill" />
+            </Button>
+        </Viewbox>
+        <TextBlock Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="0,0,0,20" FontSize="16" Foreground="#FFD8C962" FontWeight="Bold" FontFamily="Forte">DeepPeace</TextBlock>
+    </Grid>
+</UserControl>

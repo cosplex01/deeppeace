@@ -1,0 +1,8 @@
+﻿<Application x:Class="deeppeace.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:deeppeace"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>         
+    </Application.Resources>
+</Application>

@@ -1,0 +1,19 @@
+﻿<Window x:Class="deeppeace.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:deeppeace"
+        mc:Ignorable="d"
+        Title="SleepPeace" Height="200" Width="300" ResizeMode="NoResize" Icon="/starseed.ico">
+    <Window.Background>
+        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+            <GradientStop Color="Black" Offset="1"/>
+            <GradientStop Color="#FF23C316" Offset="0"/>
+            <GradientStop Color="#FF34F924" Offset="0.653"/>
+        </LinearGradientBrush>        
+    </Window.Background>
+    <Grid>
+        <local:Peace HorizontalAlignment="Center" VerticalAlignment="Center"/>
+    </Grid>
+</Window>
