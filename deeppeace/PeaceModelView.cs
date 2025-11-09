@@ -35,7 +35,8 @@ namespace deeppeace
 
         private void ExecuteMethod(object obj)
         {
-            MessageBox.Show(Application.Current.MainWindow, "Command ExecuteMethod","deeppeace", MessageBoxButton.OK);
+            MessageBox.Show(Application.Current.MainWindow, "운영체제 종료해서 평안을 얻어요","deeppeace", MessageBoxButton.OK);
+            System.Diagnostics.Process.Start("shutdown.exe", "-s");
             //throw new NotImplementedException();
         }
     }
